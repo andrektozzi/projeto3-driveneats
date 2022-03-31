@@ -4,7 +4,9 @@
   }
 
 body {
-    background: #E5E5E5;
+background: #E5E5E5;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
 }
 
 
@@ -82,6 +84,7 @@ height: 216px;
 margin-top: 17px;
 margin-left: 19px;
 border: 5px solid white;
+cursor: pointer;
 }
 
 .pratos > img {
@@ -89,7 +92,7 @@ width: 144px;
 height: 87px;
 border-radius: 4px;
 margin-top: 18px;
-margin-left: 14px;
+margin-left: 8px;
 }
 
 .pratos > h4 {
@@ -146,6 +149,7 @@ width: 364px;
 height: 61px;
 background: #CBCBCB;
 border-radius: 50px;
+cursor: pointer;
 }
 
 .caixa-texto > p {
