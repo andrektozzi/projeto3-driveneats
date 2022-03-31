@@ -13,7 +13,6 @@ width: 414px;
 height: 92px;
 background: #CF2B2B;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .topo > h1 {
@@ -36,6 +35,22 @@ line-height: 21px;
 color: #FFFFFF;
 margin-left: 21px;
 }
+
+.borda-topo{
+width: 414px;
+height: 31px;
+}
+
+.borda-meio {
+width: 414px;
+height: 27px;
+}
+
+.borda-base{
+width: 414px;
+height: 16px;
+}
+
 .conteudo {
 width: 414px;
 }
@@ -48,7 +63,6 @@ font-size: 26px;
 line-height: 32px;
 letter-spacing: 0.018em;
 color: #333333;
-margin-top: 31px;
 margin-left: 19px;
 }
 
@@ -76,7 +90,6 @@ height: 87px;
 border-radius: 4px;
 margin-top: 18px;
 margin-left: 14px;
-margin-right: 14px;
 }
 
 .pratos > h4 {
@@ -123,7 +136,6 @@ align-items: center;
 width: 414px;
 height: 92px;
 background: #FFFFFF;
-margin-top: 16px;
 }
 
 .caixa-texto {
