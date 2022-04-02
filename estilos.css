@@ -123,17 +123,23 @@
     margin-left: 14px;
   }
   
-  .pratos > p {
+  .pratos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 150px;
+  }
+
+  .check {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .pratos > div > p {
     color: #000000;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    width: 66px;
-    height: 19px;
-    margin-top: 4px;
     margin-left: 14px;
+    margin-top: 6px;
   }
   
 .fechamento {
@@ -183,5 +189,8 @@
     color: #ffffff;
   }
 
+  .green-icon {
+    color: #32b72f;
+  }
 
   

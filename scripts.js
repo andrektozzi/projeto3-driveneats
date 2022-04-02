@@ -1,9 +1,15 @@
 function pratoPrincipal(elemento) {
     let escolha = document.querySelector(".prato-principal.green-border");
-    if (escolha !== null) {
+    let checking = document.querySelector(".prato-principal .check.green-icon");
+    if ((escolha && checking) !== null) {
       escolha.classList.toggle("green-border");
+      checking.classList.toggle("green-icon");
     }
     elemento.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".prato-principal.green-border .check");
+    checkIcon.classList.toggle("green-icon");
+
   
     let primeiro = document.querySelector(".prato-principal.green-border");
     let segundo = document.querySelector(".bebidas.green-border");
@@ -22,10 +28,16 @@ function pratoPrincipal(elemento) {
   
   function bebida(elemento) {
     let escolha = document.querySelector(".bebidas.green-border");
-    if (escolha !== null) {
+    let checking = document.querySelector(".bebidas .check.green-icon");
+    if ((escolha && checking) !== null) {
       escolha.classList.toggle("green-border");
+      checking.classList.toggle("green-icon");
     }
     elemento.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".bebidas.green-border .check");
+    checkIcon.classList.toggle("green-icon");
+
   
     let primeiro = document.querySelector(".prato-principal.green-border");
     let segundo = document.querySelector(".bebidas.green-border");
@@ -44,10 +56,15 @@ function pratoPrincipal(elemento) {
   
   function sobremesa(elemento) {
     let escolha = document.querySelector(".sobremesas.green-border");
-    if (escolha !== null) {
+    let checking = document.querySelector(".sobremesas .check.green-icon");
+    if ((escolha && checking) !== null) {
       escolha.classList.toggle("green-border");
+      checking.classList.toggle("green-icon");
     }
     elemento.classList.toggle("green-border");
+
+    let checkIcon = document.querySelector(".sobremesas.green-border .check");
+    checkIcon.classList.toggle("green-icon");
   
     let primeiro = document.querySelector(".prato-principal.green-border");
     let segundo = document.querySelector(".bebidas.green-border");
@@ -62,20 +79,4 @@ function pratoPrincipal(elemento) {
         }
       }
     }
-  }
-
-  
-
-  function finalizarPedido() {
-    
-    let mensagem;
-   
-
-    mensagem = "Olá, gostaria de fazer o pedido: " +
-    "\n- Prato: " + prato +
-    "\n- Bebida: " + bebida +
-    "\n- Sobremesa: " + sobremesa + 
-    "\nTotal: R$" + Number(valorPrato + valorBebida + valorSobremesa).toFixed(2)
-
-    window.open("https://wa.me/+5519992019243?text=" + mensagem)
   }
