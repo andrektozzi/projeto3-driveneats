@@ -4,7 +4,7 @@ let bebida;
 let precoBebida;
 let sobremesa;
 let precoSobremesa;
-let fullPrice;
+let precoTotal;
 
 function pratoPrincipal(elemento) {
   let escolha = document.querySelector(".prato-principal.green-border");
@@ -99,12 +99,12 @@ function sobremesaPrincipal(elemento) {
 }
 
 function finalizarPedido() {
-  fullPrice =
+  precoTotal =
     (Number(precoPrato.replace(/\D/g, "")) +
       Number(precoBebida.replace(/\D/g, "")) +
       Number(precoSobremesa.replace(/\D/g, ""))) /
     100;
-  fullPrice = fullPrice.toFixed(2).toString();
+  precoTotal = precoTotal.toFixed(2).toString();
 
   let mensagem;
 
@@ -117,7 +117,7 @@ function finalizarPedido() {
     "\n- Sobremesa: " +
     sobremesa +
     "\nTotal: R$" +
-    fullPrice;
+    precoTotal;
 
   window.open(
     `https://wa.me/5519989298778?text=${encodeURIComponent(mensagem)}`
